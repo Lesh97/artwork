@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 });
 
 app.listen(PORT, () => {
-  console.log("server is running !");
+  console.log(`server is running ! PORT NUMBER : ${PORT}`);
 });
 
 //클라이언트 폴더 만들기 -> npm ci -> npm run build
