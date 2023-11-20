@@ -13,9 +13,15 @@ const Navul = styled.ul`
   list-style: none;
   padding-left: 0px;
   margin: 0%;
-  & > li {
-    float: left;
+  width: 100%;
+  a {
     color: black;
+    float: left;
+    height: 100%;
+    width: 25%;
+    :hover {
+      color: red;
+    }
   }
 `;
 
