@@ -1,4 +1,4 @@
-function joo() {
+function YeonJoo() {
   return (
     <>
       <h1>연주님 페이지</h1>
@@ -6,4 +6,4 @@ function joo() {
   );
 }
 
-export default joo;
+export default YeonJoo;

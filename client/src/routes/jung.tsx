@@ -1,4 +1,4 @@
-function jung() {
+function JaeJung() {
   return (
     <>
       <h1>재정님 페이지</h1>
@@ -6,4 +6,4 @@ function jung() {
   );
 }
 
-export default jung;
+export default JaeJung;

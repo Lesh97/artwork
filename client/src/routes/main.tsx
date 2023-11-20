@@ -1,20 +1,12 @@
-import { BrowserRouter, Route } from "react-router-dom";
-import YeonJoo from "./joo";
-import JaeJung from "./jung";
-import Yena from "./na";
+import Header from "../components/Header";
 
-function main() {
+function Main() {
   return (
     <>
-      <BrowserRouter>
-        <Route>
-          <Route path="/joo" element={<YeonJoo />} />
-          <Route path="/jung" element={<JaeJung />}></Route>
-          <Route path="/na" element={<Yena />} />
-        </Route>
-      </BrowserRouter>
+      <Header />
+      <h1>원하는 페이지로 이동해주세요.</h1>
     </>
   );
 }
 
-export default main;
+export default Main;

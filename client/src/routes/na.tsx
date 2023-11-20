@@ -1,4 +1,4 @@
-function na() {
+function Yena() {
   return (
     <>
       <h1>예나님 페이지</h1>
@@ -6,4 +6,4 @@ function na() {
   );
 }
 
-export default na;
+export default Yena;

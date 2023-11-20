@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Main from "../routes/main";
 
 const Nav = styled.div`
   width: 100%;
