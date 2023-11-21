@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import YeonJoo from "./routes/joo";
 import JaeJung from "./routes/jung";
