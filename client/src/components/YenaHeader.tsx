@@ -68,7 +68,9 @@ function YenaHeader() {
       <HeaderFixed>
         <LeftHeader>
           <div>
-            <div>logo</div>
+            <Link to="/">
+              <li>홈으로</li>
+            </Link>
             <input placeholder="작품이나 작가의 이름을 검색해보세요."></input>
           </div>
           <Nav>

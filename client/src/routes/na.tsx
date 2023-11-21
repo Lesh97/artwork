@@ -8,9 +8,58 @@ const Filter = styled.div`
 `;
 
 /**  ---------------메인 부분 ----------------  */
-const MainContainer = styled.div``;
-const Favorite = styled.div``;
-const ArtWorksContainer = styled.div``;
+const MainContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+const Favorite = styled.div`
+  width: 25%;
+  border-right: 2px solid #d7d9db;
+  height: 100%;
+  margin: 0px 40px 0px 30px;
+  div {
+    background-color: grey;
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+  }
+`;
+const ArtWorksContainer = styled.div`
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+`;
+const Product = styled.div`
+  margin-top: 30px;
+  .artpiece {
+    background-color: grey;
+    width: 300px;
+    height: 350px;
+  }
+  .artist {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 15px 0px;
+    h2 {
+      font-weight: 800;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    div {
+      font-size: 15px;
+      background-color: black;
+      color: white;
+      width: 60px;
+      height: 20px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+`;
 
 function Yena() {
   return (
@@ -18,8 +67,68 @@ function Yena() {
       <YenaHeader />
       <Filter></Filter>
       <MainContainer>
-        <Favorite></Favorite>
-        <ArtWorksContainer></ArtWorksContainer>
+        <Favorite>
+          favorite
+          <div></div>
+          <div></div>
+          <div></div>
+        </Favorite>
+        <ArtWorksContainer>
+          <Product>
+            <div className="artpiece"></div>
+            <div className="artist">
+              <h2>작가</h2>
+              <div>팔로우</div>
+            </div>
+            <span>작품이름</span>
+            <p>가격</p>
+          </Product>
+          <Product>
+            <div className="artpiece"></div>
+            <div className="artist">
+              <h2>작가</h2>
+              <div>팔로우</div>
+            </div>
+            <span>작품이름</span>
+            <p>가격</p>
+          </Product>
+          <Product>
+            <div className="artpiece"></div>
+            <div className="artist">
+              <h2>작가</h2>
+              <div>팔로우</div>
+            </div>
+            <span>작품이름</span>
+            <p>가격</p>
+          </Product>
+          <Product>
+            <div className="artpiece"></div>
+            <div className="artist">
+              <h2>작가</h2>
+              <div>팔로우</div>
+            </div>
+            <span>작품이름</span>
+            <p>가격</p>
+          </Product>
+          <Product>
+            <div className="artpiece"></div>
+            <div className="artist">
+              <h2>작가</h2>
+              <div>팔로우</div>
+            </div>
+            <span>작품이름</span>
+            <p>가격</p>
+          </Product>
+          <Product>
+            <div className="artpiece"></div>
+            <div className="artist">
+              <h2>작가</h2>
+              <div>팔로우</div>
+            </div>
+            <span>작품이름</span>
+            <p>가격</p>
+          </Product>
+        </ArtWorksContainer>
       </MainContainer>
     </>
   );
