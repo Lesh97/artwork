@@ -1,7 +1,9 @@
+import YeonHeader from "../components/YeonHeader";
+
 function YeonJoo() {
   return (
     <>
-      <h1>연주님 페이지</h1>
+      <YeonHeader />
     </>
   );
 }
