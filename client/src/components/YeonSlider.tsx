@@ -8,22 +8,7 @@ const imgList = [
   "https://contents.sixshop.com/thumbnails/uploadedFiles/96396/product/image_1560847627083_750.png",
 ];
 
-const SLIDER_WIDTH = 400;
-const SLIDER_HEIGHT = 400;
-
 function YeonSlider() {
-  const slideList = [imgList.at(-1), ...imgList, imgList.at(0)];
-
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const [transX, setTransX] = useState(0);
-  const [animate, setAnimate] = useState(false);
-
-  const inrange = (v: number, min: number, max: number) => {
-    if (v < min) return min;
-    if (v > max) return max;
-    return v;
-  };
-
   return;
 }
 
