@@ -1,13 +1,13 @@
 import YenaHeader from "../components/YenaHeader";
 import styled from "styled-components";
-/**  ---------------필터 부분 ----------------  */
+/**  ---------------필터 부분 CSS ----------------  */
 const Filter = styled.div`
   width: 100%;
   height: 100px;
   background-color: #f0f1f3;
 `;
 
-/**  ---------------메인 부분 ----------------  */
+/**  ---------------메인 부분 CSS ----------------  */
 const MainContainer = styled.div`
   display: flex;
   align-items: center;
