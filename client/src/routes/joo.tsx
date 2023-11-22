@@ -1,7 +1,10 @@
-import { useState } from "react";
 import { styled } from "styled-components";
 import YeonHeader from "../components/YeonHeader";
-import { YeonSlider } from "../components/YeonSlider";
+import {
+  YeonSlider,
+  CollectionSlider,
+  KoreanSlider,
+} from "../components/YeonSlider";
 
 const MainSlider = styled.div`
   width: 100%;
@@ -12,25 +15,64 @@ const ChartContainer = styled.div`
   height: 450px;
   background-color: skyblue;
 `;
-const ChartSelect = styled.div``;
-const MainChart = styled.div`
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(25%, auto));
-  grid-auto-flow: dense;
-`;
-const ChartPiece = styled.div`
-  height: 150px;
+const ChartSelect = styled.div`
+  width: 100%;
+  height: 70px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const TopNew = styled.div`
+  display: flex;
+  width: 20%;
   div {
-    width: 20%;
+    width: 10%;
   }
+`;
+
+const ChartSelectDetail = styled.div`
+  display: flex;
+`;
+
+const DateSlecet = styled.div`
+  display: flex;
+`;
+
+const MainChart = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 450px;
+`;
+
+const ChartRef = styled.div`
+  display: grid;
+  grid-template-columns: 60px 115px 1fr 2fr 1fr 60px 115px 1fr 2fr 1fr;
+  width: 100%;
+`;
+
+const ChartMain = styled.div`
+  display: grid;
+  grid-template-columns: 60px 115px 1fr 2fr 1fr 60px 115px 1fr 2fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-flow: column;
+  width: 100%;
+`;
+
+const ChartCell = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 const KaSlider = styled.div`
   width: 100%;
   height: 350px;
 `;
-const CollectionSlider = styled.div`
+const CollectionContainer = styled.div`
   width: 100%;
   height: 350px;
 `;
@@ -43,42 +85,68 @@ function YeonJoo() {
         <YeonSlider></YeonSlider>
       </MainSlider>
       <ChartContainer>
-        <ChartSelect>top new </ChartSelect>
+        <ChartSelect>
+          <TopNew>
+            <div>Top</div>
+            <div>New</div>
+          </TopNew>
+          <ChartSelectDetail>
+            <DateSlecet>
+              <div>1h</div>
+              <div>6h</div>
+              <div>24h</div>
+              <div>7d</div>
+            </DateSlecet>
+            <div>
+              <select></select>
+            </div>
+            <div>view all</div>
+          </ChartSelectDetail>
+        </ChartSelect>
         <MainChart>
-          <ChartPiece>
+          <ChartRef>
             <div></div>
-            <div>이미지</div>
-            <div>top title</div>
+            <div></div>
+            <div>Name</div>
             <div>price</div>
             <div>size</div>
-          </ChartPiece>
-          <ChartPiece>
             <div></div>
-            <div>이미지</div>
-            <div>top title</div>
+            <div></div>
+            <div>Name</div>
             <div>price</div>
             <div>size</div>
-          </ChartPiece>
-          <ChartPiece>
+          </ChartRef>
+          <ChartMain>
             <div>1</div>
-            <div>이미지</div>
-            <div>top title</div>
-            <div>300,000</div>
-            <div>15호</div>
-          </ChartPiece>
-          <ChartPiece>
-            <div>6</div>
-            <div>이미지</div>
-            <div>top title</div>
-            <div>500,000</div>
-            <div>18호</div>
-          </ChartPiece>
+            <div>img</div>
+            <div>asdasdasdasd: asdas</div>
+            <div>price</div>
+            <div>size</div>
+
+            <div>2</div>
+            <div>img</div>
+            <div>asdasdasdasd: asdas</div>
+            <div>price</div>
+            <div>size</div>
+          </ChartMain>
         </MainChart>
       </ChartContainer>
-      <KaSlider>korean artist</KaSlider>
-      <CollectionSlider>collection title</CollectionSlider>
-      <CollectionSlider>collection title</CollectionSlider>
-      <CollectionSlider>collection title</CollectionSlider>
+      <KaSlider>
+        <h2>korean artist</h2>
+        <KoreanSlider></KoreanSlider>
+      </KaSlider>
+      <CollectionContainer>
+        <h2>collection title</h2>
+        <CollectionSlider></CollectionSlider>
+      </CollectionContainer>
+      <CollectionContainer>
+        <h2>collection title</h2>
+        <CollectionSlider></CollectionSlider>
+      </CollectionContainer>
+      <CollectionContainer>
+        <h2>collection title</h2>
+        <CollectionSlider></CollectionSlider>
+      </CollectionContainer>
     </>
   );
 }

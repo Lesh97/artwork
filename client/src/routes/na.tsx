@@ -7,29 +7,37 @@ const Filter = styled.div`
   background-color: #f0f1f3;
 `;
 
-/**  ---------------메인 부분 CSS ----------------  */
+/**  ---------------메인컨테이너 CSS ----------------  */
 const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 `;
+
+/**  ---------------즐겨찾기 부분 CSS ----------------  */
 const Favorite = styled.div`
   width: 25%;
   border-right: 2px solid #d7d9db;
   height: 100%;
-  margin: 0px 40px 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   div {
     background-color: grey;
     width: 300px;
     height: 150px;
     margin-top: 30px;
   }
+
+  /**  ---------------작품 부분 CSS ----------------  */
 `;
 const ArtWorksContainer = styled.div`
   width: 75%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 `;
 const Product = styled.div`
   margin-top: 30px;
